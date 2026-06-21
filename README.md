@@ -32,19 +32,6 @@ Great for survival servers that want less destructive mob behavior while keeping
 3. Start or restart your Spigot/Paper server.
 4. Plugin loads automatically with no additional setup.
 
-## Build
-From the project root:
-
-```bash
-mvn clean package
-```
-
-The compiled plugin `.jar` will be generated in:
-
-```text
-target/
-```
-
 ## How It Works
 SKY-GRIEFERS uses Spigot event listeners to:
 1. **Block Creeper explosions** – intercepts `EntityExplodeEvent` and cancels block damage while preserving entity effects.
@@ -64,7 +51,3 @@ SKY-GRIEFERS uses Spigot event listeners to:
 - **Build fails**
   - Ensure Maven is installed and `JAVA_HOME` targets Java 21.
   - Run: `mvn -X clean package` for detailed logs.
-
-## Repository
-- **GitHub:** [USMCsky/SKY-GRIEFERS](https://github.com/USMCsky/SKY-GRIEFERS)
-- **Template reference:** [USMCsky/SkyMap_Spigot_Plugin](https://github.com/USMCsky/SkyMap_Spigot_Plugin)
