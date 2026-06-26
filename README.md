@@ -41,13 +41,8 @@ SKY-GRIEFERS uses Spigot event listeners to:
 - **Creepers still break blocks**
   - Confirm this plugin is loaded on startup (check console logs).
   - Check for other plugins that alter explosion behavior (may conflict).
-  - Restart the server to ensure plugin is active.
 
 - **Phantoms still appear**
   - Check for other plugins or datapacks that force phantom spawns.
   - Confirm plugin loaded without errors at startup.
   - Verify no other plugins are overriding spawn behavior.
-
-- **Build fails**
-  - Ensure Maven is installed and `JAVA_HOME` targets Java 21.
-  - Run: `mvn -X clean package` for detailed logs.
